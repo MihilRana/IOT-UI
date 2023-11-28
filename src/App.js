@@ -5,8 +5,6 @@ import ParkingSlot from "./components/ParkingSlot";
 import database from "./firebase";
 import { getDatabase, ref, onValue } from "firebase/database";
 
-
-//my change here
 const App = () => {
   const [slotData, setSlotData] = useState([]);
 
@@ -17,7 +15,7 @@ const App = () => {
       onValue(starCountRef, (snapshot) => {
         const data = snapshot.val();
         setSlotData(data);
-        console.log(data);
+        console.log(log);//go code
       });
     }, 5000);
     return () => clearInterval(intervalId);
