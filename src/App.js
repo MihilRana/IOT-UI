@@ -17,7 +17,7 @@ const App = () => {
       onValue(starCountRef, (snapshot) => {
         const data = snapshot.val();
         setSlotData(data);
-        console.log(data);
+        console.log(slotData); 
       });
     }, 5000);
     return () => clearInterval(intervalId);
