@@ -4,6 +4,8 @@ import ParkingSlot from "./components/ParkingSlot";
 import database from "./firebase";
 import { getDatabase, ref, onValue } from "firebase/database";
 
+
+//my change here
 const App = () => {
   const [slotData, setSlotData] = useState([]);
 
